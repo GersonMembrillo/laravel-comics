@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    $data = [
+        'navbar' => config('db.navbar'),
+        'footerComics' => config('db.footerComics'),
+        'footerShop' => config('db.footerShop'),
+        'footerDC' => config('db.footerDC'),
+        'footerSites' => config('db.footerSites'),
+        'mainButtons' => config('db.mainButtons'),
+        'mainCards' => config('db.mainCards')
+    ];
+    return view('home', $data);
+})->name('home');
+
+Route::get('/comics', function () {
+    $data = [];
+    return view('comics.index', $data);
+})->name('comics.index');
