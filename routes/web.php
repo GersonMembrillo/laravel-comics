@@ -21,7 +21,7 @@ Route::get('/', function () {
         'footerDC' => config('db.footerDC'),
         'footerSites' => config('db.footerSites'),
         'mainButtons' => config('db.mainButtons'),
-        'mainCards' => config('db.mainCards')
+        'mainCards' => config('db.mainCards'),
     ];
     return view('home', $data);
 })->name('home');

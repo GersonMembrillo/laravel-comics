@@ -9,7 +9,7 @@
                         <div class="card border-0">
                             <div class="card-body p-0">
                                 <div class="card-image">
-                                    <img src="{{ $card['thumb'] }}" alt="{{ $card['series'] }}" class="img-fluid">
+                                    <img src="{{ $card['thumb' non lo so quando si è aggiornato e quando si è aggiornato] }}" alt="{{ $card['series'] }}" class="img-fluid">
                                 </div>
                                 <div class="card-title text-uppercase text-white bg-dark mb-0 pt-2">
                                     {{ $card['series'] }}
@@ -19,6 +19,7 @@
                     @endforeach
                 </div>
             </div>
+
             <div class="d-flex justify-content-center">
                 <button type="button" class="btn btn-primary d-flex rounded-0">LOAD MORE</button>
             </div>
