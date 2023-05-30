@@ -4,24 +4,26 @@
     <div class="main-top py-3 bg-dark position-relative">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-2 my-4">
-                    @foreach ($mainCards as $card)
+                @foreach ($mainCards as $card)
+                    <div class="col-12 col-lg-2 my-4">
+
                         <div class="card border-0">
                             <div class="card-body p-0">
                                 <div class="card-image">
-                                    <img src="{{ $card['thumb' non lo so quando si è aggiornato e quando si è aggiornato] }}" alt="{{ $card['series'] }}" class="img-fluid">
+                                    <img src="{{ $card['thumb'] }}" alt="{{ $card['series'] }}" class="img-fluid">
                                 </div>
                                 <div class="card-title text-uppercase text-white bg-dark mb-0 pt-2">
                                     {{ $card['series'] }}
                                 </div>
                             </div>
                         </div>
-                    @endforeach
-                </div>
+
+                    </div>
+                @endforeach
             </div>
 
             <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-primary d-flex rounded-0">LOAD MORE</button>
+                <button type="button" class="btn btn-primary d-flex rounded-0 mb-4">LOAD MORE</button>
             </div>
 
         </div>

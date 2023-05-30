@@ -1,9 +1,9 @@
 <header>
-    <div class="header-top container d-flex justify-content-between align-content-center py-3">
+    <div class="container d-flex justify-content-between align-content-center py-3">
         <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc-logo">
         <ul class="d-flex list-item-none align-items-center text-uppercase">
             @foreach ($navbar as $button)
-                <li class="p-3">
+                <li class="p-2">
                     <a href="{{ $button['url'] }}">{{ $button['name'] }}</a>
                 </li>
             @endforeach

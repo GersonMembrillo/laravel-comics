@@ -87,27 +87,27 @@ return [
     'mainButtons' => [
         [
             'name' => 'Digital Comics',
-            'src' => asset('img/buy-comics-digital-comics.png'),
+            'src' => 'img/buy-comics-digital-comics.png',
             'url' => '#',
         ],
         [
             'name' => 'DC Merchandise',
-            'src' => asset('img/buy-comics-merchandise.png'),
+            'src' => 'img/buy-comics-merchandise.png',
             'url' => '#',
         ],
         [
             'name' => 'Subscription',
-            'src' => asset('img/buy-comics-subscriptions.png'),
+            'src' => 'img/buy-comics-subscriptions.png',
             'url' => '#',
         ],
         [
             'name' => 'Comic Shop Locator',
-            'src' => asset('img/buy-comics-shop-locator.png'),
+            'src' => 'img/buy-comics-shop-locator.png',
             'url' => '#',
         ],
         [
             'name' => 'DC Power Visa',
-            'src' => asset('img/buy-dc-power-visa.svg'),
+            'src' => 'img/buy-dc-power-visa.svg',
             'url' => '#',
         ],
     ],
